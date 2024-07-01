@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+* {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(90deg, rgba(116,70,94,1) 0%, rgba(68,48,101,1) 100%);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+.queenImg {
+    animation: fadeIn1 1.5s;
+    margin-top: 2em;
+    width: 5em;
+    height: 5em;
+}
+
+h1 {
+    font-size: 7em;
+    color: rgba(255, 255, 255, 0.8);
+    animation: fadeIn1 2s;
+    text-shadow: 0.1em 0.1em 0.3em #000000;
+    transition: ease-in 0.1s;
+}
+
+h1:hover {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0.1em 0.1em 0.5em #000000;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.4);
+    animation: fadeIn1 3s;
+    transition: ease-in 0.1s;
+}
+
+h2:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.line {
+    animation: fadeIn1 4s;
+    width: 50%;
+    height: 50%;
+}
+
+form {
+    animation: fadeIn2 2s;
+    margin-top: 1em;
+    border-radius: 2em;
+
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+legend {
+    border-radius: 2em;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.9em #000000;
+    transition: ease-in 0.1s;
+}
+
+label:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="text"] {
+    padding: 0.3em;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: black solid 0.1em;
+    border-radius: 1em;
+    text-align: center;
+    outline: black solid 0em;
+    transition: ease-in 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+input[type="text"]:focus {
+    outline: black solid 0.2em;
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 29px 48px, rgba(0, 0, 0, 0.22) 0px 25px 22px;
+}
+
+input[type="submit"] {
+    padding: 1em;
+    border: solid rgba(0, 0, 0, 0.8) 0.1em;
+    border-radius: 1em;
+    background-color: rgba(0, 255, 0, 0.5);
+    color: rgba(0, 255, 0, 0.7);
+    font-weight: bold;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: ease-in 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 255, 0, 0.3);
+    color: rgba(0, 255, 0, 0.8);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 29px 48px, rgba(0, 0, 0, 0.22) 0px 25px 22px;
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+        transform: translateY(15%);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

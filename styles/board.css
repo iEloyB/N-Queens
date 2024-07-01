@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(90deg, rgba(116,70,94,1) 0%, rgba(68,48,101,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+.queenImg {
+    margin-top: 2em;
+    width: 5em;
+    height: 5em;
+}
+
+h1 {
+    font-size: 7em;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0.1em 0.1em 0.3em #000000;
+    transition: ease-in 0.1s;
+}
+
+h1:hover {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0.1em 0.1em 0.5em #000000;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.4);
+    transition: ease-in 0.1s;
+}
+
+h2:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.line {
+    width: 50%;
+    height: 50%;
+}
+
+table {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: rgba(0, 0, 0, 0.8) solid 0.2em;
+    border-radius: 1em;
+    padding: 0.1em;
+}
+
+td {
+    border: rgba(0, 0, 0, 0.8) solid 0.01em;
+    border-radius: 0.5em;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+td:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5em;
+}
+
+p:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.queen {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url(../icons/chess-queen.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    transition: 0.2s ease-in;
+}
+
+.queen:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: 80%;
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+        transform: translateY(15%);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
